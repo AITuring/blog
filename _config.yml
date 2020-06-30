@@ -4,16 +4,16 @@
 
 # Site
 title: Apoollo
-subtitle: 欲与将军会猎于吴
+subtitle: "AITuring's blog"
 description: ''
 keywords:
 author: AITuring
-language: zh-CN
+language: zh-cn
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://apoollo.com
+url: http://yoursite.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -97,21 +97,7 @@ theme: Chic
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-
 deploy:
-  - type: git
-    repo: git@github.com:AITuring/AITuring.github.io.git
-    branch: master
-  - type: git
-    repo: git@github.com:AITuring/AITuring.github.io.git
-    branch: hexo
-    extend_dirs: /
-    ignore_hidden: false
-    ignore_pattern:
-        public: .
-
-search:
-  path: search.xml
-  field: post
-  format: html
-  limit: 10000
+  type: 'git'
+  repo: 'git@github.com:AITuring/AITuring.github.io.git'
+  branch: master
